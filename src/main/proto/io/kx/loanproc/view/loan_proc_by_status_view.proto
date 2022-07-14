@@ -39,8 +39,7 @@ service LoanProcByStatus {
           " WHERE status_id = :status_id"
     };
     option (google.api.http) = {
-      post: "/loanproc/views/by-status",
-      body: "*"
+      get: "/loanproc/views/by-status/{status_id}"
     };
   }
 
